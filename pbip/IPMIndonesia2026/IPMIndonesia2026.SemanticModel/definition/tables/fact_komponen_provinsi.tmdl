@@ -1,0 +1,101 @@
+table fact_komponen_provinsi
+	lineageTag: ae2400c7-3d43-5691-9bec-913701828f29
+
+	measure 'Rata-rata UHH' =
+			AVERAGE ( fact_komponen_provinsi[uhh_tahun] )
+		formatString: 0.00
+		lineageTag: fe6921e5-438d-50da-a0fb-0e99a717a115
+
+	measure 'Rata-rata RLS' =
+			AVERAGE ( fact_komponen_provinsi[rls_tahun] )
+		formatString: 0.00
+		lineageTag: cb4b41da-6dde-594b-8226-7796abfd27f3
+
+	measure 'Rata-rata HLS' =
+			AVERAGE ( fact_komponen_provinsi[hls_tahun] )
+		formatString: 0.00
+		lineageTag: 04497085-9c6e-5abf-8dab-5979cda33a85
+
+	measure 'Rata-rata Pengeluaran' =
+			AVERAGE ( fact_komponen_provinsi[pengeluaran_ribu_rp] )
+		formatString: #,##0
+		lineageTag: ecce3136-6bc0-5dab-9586-5f33bd577112
+
+	column provinsi_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b4b7967-3dee-575c-a329-af97468d5461
+		summarizeBy: none
+		sourceColumn: provinsi_id
+
+	column provinsi
+		dataType: string
+		lineageTag: 9d5f59c3-3b79-5d4b-90eb-1451f5f01bb9
+		summarizeBy: none
+		sourceColumn: provinsi
+
+	column tahun_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 88b34f75-4923-5da9-bbce-8a3315daa7f2
+		summarizeBy: none
+		sourceColumn: tahun_id
+
+	column uhh_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: 4dd471e0-c1a8-5759-bbdf-35db4e467e95
+		summarizeBy: none
+		sourceColumn: uhh_tahun
+
+	column hls_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: 3016f565-c59e-5666-98d4-580bd63ee68e
+		summarizeBy: none
+		sourceColumn: hls_tahun
+
+	column rls_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: c53cead4-45a2-54a8-ac32-6bf2259ae30c
+		summarizeBy: none
+		sourceColumn: rls_tahun
+
+	column pengeluaran_ribu_rp
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 91829b2b-5eb8-5616-b9f8-055c2c1c02e1
+		summarizeBy: none
+		sourceColumn: pengeluaran_ribu_rp
+
+	column ipm
+		dataType: double
+		formatString: 0.00
+		lineageTag: e10fdeb9-c4bb-53b1-934d-e85e0f6af522
+		summarizeBy: none
+		sourceColumn: ipm
+
+	column kategori
+		dataType: string
+		lineageTag: 4cfd6283-5337-5b75-842e-cf7d0f3c5124
+		summarizeBy: none
+		sourceColumn: kategori
+
+	column pertumbuhan_persen
+		dataType: double
+		formatString: 0.00
+		lineageTag: 9cc67a4b-acee-56a0-8322-87b19385d831
+		summarizeBy: none
+		sourceColumn: pertumbuhan_persen
+
+	partition fact_komponen_provinsi = m
+		mode: import
+		source = ```
+				let
+					Source = Csv.Document(File.Contents(FolderData & "\fact_komponen_provinsi.csv"), [Delimiter = ",", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+					PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{"provinsi_id", Int64.Type}, {"provinsi", type text}, {"tahun_id", Int64.Type}, {"uhh_tahun", type number}, {"hls_tahun", type number}, {"rls_tahun", type number}, {"pengeluaran_ribu_rp", Int64.Type}, {"ipm", type number}, {"kategori", type text}, {"pertumbuhan_persen", type number}})
+				in
+					ChangedType
+				```
