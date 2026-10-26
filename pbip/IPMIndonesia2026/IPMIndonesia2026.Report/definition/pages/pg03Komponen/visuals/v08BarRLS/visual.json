@@ -1,0 +1,104 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "v08BarRLS",
+  "position": {
+    "x": 640,
+    "y": 200,
+    "z": 7,
+    "height": 220,
+    "width": 620,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_provinsi"
+                    }
+                  },
+                  "Property": "provinsi"
+                }
+              },
+              "queryRef": "dim_provinsi.provinsi",
+              "nativeQueryRef": "provinsi"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_komponen_provinsi"
+                    }
+                  },
+                  "Function": 1,
+                  "Property": "rls_tahun"
+                }
+              },
+              "queryRef": "fact_komponen_provinsi.rls_tahun",
+              "nativeQueryRef": "Average of rls_tahun"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_komponen_provinsi"
+                  }
+                },
+                "Function": 1,
+                "Property": "rls_tahun"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rata-rata Lama Sekolah per Provinsi, 2025 (tahun)'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
