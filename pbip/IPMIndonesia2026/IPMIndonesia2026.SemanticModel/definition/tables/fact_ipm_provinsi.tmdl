@@ -1,0 +1,101 @@
+table fact_ipm_provinsi
+	lineageTag: 8fbaf95a-2b04-5a21-acbc-c33796035606
+
+	measure 'IPM Terpilih' =
+			AVERAGE ( fact_ipm_provinsi[ipm] )
+		formatString: 0.00
+		lineageTag: f2a87ac9-140f-5487-abae-967c10788f20
+
+	measure 'Jumlah Provinsi Sangat Tinggi' =
+			CALCULATE ( COUNTROWS ( fact_ipm_provinsi ), fact_ipm_provinsi[kategori] = "Sangat Tinggi" )
+		formatString: 0
+		lineageTag: 3e0c382b-0fc6-5be3-9355-78ede33e5336
+
+	measure 'Jumlah Provinsi Sangat Tinggi 2025' =
+			CALCULATE ( [Jumlah Provinsi Sangat Tinggi], dim_tahun[tahun] = 2025 )
+		formatString: 0
+		lineageTag: 2a018d66-b2d6-56c1-acc9-6fc84d5df327
+
+	measure 'Jumlah Provinsi Tinggi 2025' =
+			CALCULATE ( COUNTROWS ( fact_ipm_provinsi ), fact_ipm_provinsi[kategori] = "Tinggi", dim_tahun[tahun] = 2025 )
+		formatString: 0
+		lineageTag: 3dd9a17d-6b57-526d-8924-8896efbf818d
+
+	measure 'Jumlah Provinsi Sedang 2025' =
+			CALCULATE ( COUNTROWS ( fact_ipm_provinsi ), fact_ipm_provinsi[kategori] = "Sedang", dim_tahun[tahun] = 2025 )
+		formatString: 0
+		lineageTag: 56ae1492-bbcd-5eec-8783-91d86748434e
+
+	measure 'Jumlah Provinsi Rendah 2025' =
+			CALCULATE ( COUNTROWS ( fact_ipm_provinsi ), fact_ipm_provinsi[kategori] = "Rendah", dim_tahun[tahun] = 2025 )
+		formatString: 0
+		lineageTag: 731cfb22-08ed-552e-9738-e06471709af4
+
+	measure 'IPM Tertinggi' =
+			MAX ( fact_ipm_provinsi[ipm] )
+		formatString: 0.00
+		lineageTag: 45b1febb-ab72-5f8c-8db3-44564c9aea90
+
+	measure 'IPM Terendah' =
+			MIN ( fact_ipm_provinsi[ipm] )
+		formatString: 0.00
+		lineageTag: 2f417729-d273-55e2-8abb-c979a90558e8
+
+	measure 'Gap IPM' =
+			[IPM Tertinggi] - [IPM Terendah]
+		formatString: 0.00
+		lineageTag: cfd6ec21-4906-54d7-ad11-df6c5a7b617b
+
+	measure 'IPM Tertinggi 2025' =
+			CALCULATE ( [IPM Tertinggi], dim_tahun[tahun] = 2025 )
+		formatString: 0.00
+		lineageTag: c5b43cd2-91f5-5ad7-9fd8-10da45812bdd
+
+	measure 'Gap IPM 2025' =
+			CALCULATE ( [Gap IPM], dim_tahun[tahun] = 2025 )
+		formatString: 0.00
+		lineageTag: 1a68b323-0d68-5152-89c4-d78897a978c3
+
+	column provinsi_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 13dd9729-ebaf-5371-9dd6-00f23665c946
+		summarizeBy: none
+		sourceColumn: provinsi_id
+
+	column provinsi
+		dataType: string
+		lineageTag: 3b2ee6d5-3eef-50ed-988e-fbad17b272f4
+		summarizeBy: none
+		sourceColumn: provinsi
+
+	column tahun_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 876fd05d-e5e3-509a-b9e9-d825339c93ea
+		summarizeBy: none
+		sourceColumn: tahun_id
+
+	column ipm
+		dataType: double
+		formatString: 0.00
+		lineageTag: 6263cc34-1363-5f4c-9f67-8d5b5c6f2a5a
+		summarizeBy: none
+		sourceColumn: ipm
+
+	column kategori
+		dataType: string
+		lineageTag: e6d112d1-4d2c-524b-a9f9-70e6ab840e53
+		summarizeBy: none
+		sourceColumn: kategori
+
+	partition fact_ipm_provinsi = m
+		mode: import
+		source = ```
+				let
+					Source = Csv.Document(File.Contents(FolderData & "\fact_ipm_provinsi.csv"), [Delimiter = ",", Columns = 5, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+					PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{"provinsi_id", Int64.Type}, {"provinsi", type text}, {"tahun_id", Int64.Type}, {"ipm", type number}, {"kategori", type text}})
+				in
+					ChangedType
+				```
