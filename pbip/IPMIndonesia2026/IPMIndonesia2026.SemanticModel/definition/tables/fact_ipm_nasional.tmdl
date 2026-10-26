@@ -1,0 +1,75 @@
+table fact_ipm_nasional
+	lineageTag: 3fee43c5-5e46-5b77-9bbb-57d9874f1be2
+
+	measure 'IPM Nasional' =
+			AVERAGE ( fact_ipm_nasional[ipm] )
+		formatString: 0.00
+		lineageTag: 55a0e13a-7ada-5bd0-9f4f-73501b1565d4
+
+	measure 'IPM Nasional 2025' =
+			CALCULATE ( [IPM Nasional], dim_tahun[tahun] = 2025 )
+		formatString: 0.00
+		lineageTag: a8efba91-2615-5aaa-b231-2c97ca5eca7e
+
+	measure 'IPM Nasional 2020' =
+			CALCULATE ( [IPM Nasional], dim_tahun[tahun] = 2020 )
+		formatString: 0.00
+		lineageTag: 290187a8-3be7-5dbc-8e03-aa96a5ad5251
+
+	measure 'Kenaikan IPM 2020 ke 2025' =
+			[IPM Nasional 2025] - [IPM Nasional 2020]
+		formatString: 0.00
+		lineageTag: 58da3659-ee44-520a-9302-79196961e3c8
+
+	column tahun_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d7eab67-e63d-527e-9b73-679996cefb70
+		summarizeBy: none
+		sourceColumn: tahun_id
+
+	column ipm
+		dataType: double
+		formatString: 0.00
+		lineageTag: 865d10fe-8ddd-50a9-a233-3e5dde4f32df
+		summarizeBy: none
+		sourceColumn: ipm
+
+	column uhh_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: 5ad30cf4-b667-5224-ad3c-ed956791af58
+		summarizeBy: none
+		sourceColumn: uhh_tahun
+
+	column hls_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: e0a90208-b0b1-5bd4-b887-ea1682ceddd0
+		summarizeBy: none
+		sourceColumn: hls_tahun
+
+	column rls_tahun
+		dataType: double
+		formatString: 0.00
+		lineageTag: dc5521b1-aa76-53e2-b170-1c177d463d13
+		summarizeBy: none
+		sourceColumn: rls_tahun
+
+	column pengeluaran_ribu_rp
+		dataType: int64
+		formatString: #,##0
+		lineageTag: c8b1e221-b42e-51f6-92cb-6e39c920a05a
+		summarizeBy: none
+		sourceColumn: pengeluaran_ribu_rp
+
+	partition fact_ipm_nasional = m
+		mode: import
+		source = ```
+				let
+					Source = Csv.Document(File.Contents(FolderData & "\fact_ipm_nasional.csv"), [Delimiter = ",", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+					PromotedHeaders = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					ChangedType = Table.TransformColumnTypes(PromotedHeaders, {{"tahun_id", Int64.Type}, {"ipm", type number}, {"uhh_tahun", type number}, {"hls_tahun", type number}, {"rls_tahun", type number}, {"pengeluaran_ribu_rp", Int64.Type}})
+				in
+					ChangedType
+				```
