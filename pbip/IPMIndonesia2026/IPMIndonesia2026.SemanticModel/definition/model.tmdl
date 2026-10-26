@@ -1,0 +1,13 @@
+model Model
+	culture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+ref table dim_provinsi
+ref table dim_tahun
+ref table fact_ipm_provinsi
+ref table fact_ipm_nasional
+ref table fact_komponen_provinsi
+
+ref expression FolderData
