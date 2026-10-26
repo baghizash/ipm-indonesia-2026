@@ -1,0 +1,458 @@
+{
+  "sumber": "BPS, Publikasi dan BRS IPM 2025 (lihat data/SOURCES.md); semua angka dihitung dari CSV di data/",
+  "pasangan_korelasi": "IPM 2025 x kemiskinan Mar 2025",
+  "tren_nasional": {
+    "ipm_2020": 72.81,
+    "ipm_2025": 75.9,
+    "gain_total_poin_2020_2025": 3.09,
+    "gain_rata_rata_per_tahun_poin": 0.618,
+    "kategori_per_tahun": {
+      "2020": "Tinggi",
+      "2021": "Tinggi",
+      "2022": "Tinggi",
+      "2023": "Tinggi",
+      "2024": "Tinggi",
+      "2025": "Tinggi"
+    },
+    "ipm_per_tahun": {
+      "2020": 72.81,
+      "2021": 73.16,
+      "2022": 73.77,
+      "2023": 74.39,
+      "2024": 75.02,
+      "2025": 75.9
+    },
+    "komponen_2020": {
+      "uhh_tahun": 73.37,
+      "hls_tahun": 12.98,
+      "rls_tahun": 8.48,
+      "pengeluaran_ribu_rp": 11013
+    },
+    "komponen_2025": {
+      "uhh_tahun": 74.47,
+      "hls_tahun": 13.3,
+      "rls_tahun": 9.07,
+      "pengeluaran_ribu_rp": 12802
+    },
+    "komponen_delta_2020_2025": {
+      "uhh_tahun": 1.1,
+      "hls_tahun": 0.32,
+      "rls_tahun": 0.59,
+      "pengeluaran_ribu_rp": 1789,
+      "pengeluaran_persen": 16.24
+    }
+  },
+  "ranking_2025": {
+    "tertinggi": {
+      "provinsi": "DKI Jakarta",
+      "ipm": 85.05
+    },
+    "terendah": {
+      "provinsi": "Papua Pegunungan",
+      "ipm": 54.91
+    },
+    "gap_poin": 30.14,
+    "gap_rasio": 1.549,
+    "median_ipm": 74.81,
+    "rata_rata_ipm_provinsi": 74.25,
+    "jumlah_per_kategori": {
+      "Rendah": 1,
+      "Sedang": 4,
+      "Tinggi": 30,
+      "Sangat Tinggi": 3
+    },
+    "provinsi_ipm_80_ke_atas": [
+      {
+        "provinsi": "DKI Jakarta",
+        "ipm": 85.05
+      },
+      {
+        "provinsi": "DI Yogyakarta",
+        "ipm": 82.48
+      },
+      {
+        "provinsi": "Kepulauan Riau",
+        "ipm": 80.53
+      }
+    ],
+    "ranking_lengkap": [
+      {
+        "provinsi": "DKI Jakarta",
+        "ipm": 85.05,
+        "kategori": "Sangat Tinggi"
+      },
+      {
+        "provinsi": "DI Yogyakarta",
+        "ipm": 82.48,
+        "kategori": "Sangat Tinggi"
+      },
+      {
+        "provinsi": "Kepulauan Riau",
+        "ipm": 80.53,
+        "kategori": "Sangat Tinggi"
+      },
+      {
+        "provinsi": "Kalimantan Timur",
+        "ipm": 79.39,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Bali",
+        "ipm": 79.37,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sumatera Barat",
+        "ipm": 77.27,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Banten",
+        "ipm": 77.25,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sumatera Utara",
+        "ipm": 76.47,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sulawesi Utara",
+        "ipm": 76.32,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Riau",
+        "ipm": 76.31,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Aceh",
+        "ipm": 76.23,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Jawa Timur",
+        "ipm": 76.13,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Kalimantan Selatan",
+        "ipm": 76.1,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sulawesi Selatan",
+        "ipm": 75.92,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Jawa Barat",
+        "ipm": 75.9,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Bengkulu",
+        "ipm": 75.68,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Kepulauan Bangka Belitung",
+        "ipm": 75.26,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Jambi",
+        "ipm": 75.13,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Kalimantan Tengah",
+        "ipm": 74.86,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Jawa Tengah",
+        "ipm": 74.77,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sumatera Selatan",
+        "ipm": 74.76,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Papua",
+        "ipm": 74.69,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sulawesi Tenggara",
+        "ipm": 74.25,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Maluku",
+        "ipm": 74.09,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Kalimantan Utara",
+        "ipm": 74.04,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Lampung",
+        "ipm": 73.98,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Nusa Tenggara Barat",
+        "ipm": 73.97,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sulawesi Tengah",
+        "ipm": 72.82,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Gorontalo",
+        "ipm": 72.62,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Maluku Utara",
+        "ipm": 72.52,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Kalimantan Barat",
+        "ipm": 72.09,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Sulawesi Barat",
+        "ipm": 71.16,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Papua Barat Daya",
+        "ipm": 70.55,
+        "kategori": "Tinggi"
+      },
+      {
+        "provinsi": "Nusa Tenggara Timur",
+        "ipm": 69.89,
+        "kategori": "Sedang"
+      },
+      {
+        "provinsi": "Papua Selatan",
+        "ipm": 69.54,
+        "kategori": "Sedang"
+      },
+      {
+        "provinsi": "Papua Barat",
+        "ipm": 68.48,
+        "kategori": "Sedang"
+      },
+      {
+        "provinsi": "Papua Tengah",
+        "ipm": 60.64,
+        "kategori": "Sedang"
+      },
+      {
+        "provinsi": "Papua Pegunungan",
+        "ipm": 54.91,
+        "kategori": "Rendah"
+      }
+    ]
+  },
+  "konvergensi_2022_2025": {
+    "gain_per_provinsi": {
+      "Papua Barat": 2.45,
+      "Kalimantan Barat": 2.38,
+      "Nusa Tenggara Barat": 2.32,
+      "DKI Jakarta": 2.28,
+      "Sumatera Selatan": 2.28,
+      "Jawa Barat": 2.27,
+      "Maluku Utara": 2.26,
+      "Nusa Tenggara Timur": 2.26,
+      "Papua Pegunungan": 2.22,
+      "Lampung": 2.19,
+      "Papua Selatan": 2.15,
+      "Aceh": 2.12,
+      "Papua": 2.12,
+      "Sumatera Barat": 2.11,
+      "Kalimantan Selatan": 2.1,
+      "Jawa Timur": 2.08,
+      "Maluku": 2.05,
+      "Kepulauan Riau": 2.05,
+      "Kalimantan Timur": 2.03,
+      "Jambi": 2.02,
+      "Banten": 2.0,
+      "Bengkulu": 2.0,
+      "Gorontalo": 2.0,
+      "Bali": 1.97,
+      "Jawa Tengah": 1.97,
+      "Sulawesi Barat": 1.97,
+      "Sulawesi Selatan": 1.96,
+      "Sumatera Utara": 1.96,
+      "Papua Barat Daya": 1.95,
+      "Papua Tengah": 1.88,
+      "Sulawesi Tenggara": 1.87,
+      "Riau": 1.86,
+      "DI Yogyakarta": 1.83,
+      "Kalimantan Utara": 1.83,
+      "Sulawesi Tengah": 1.81,
+      "Sulawesi Utara": 1.8,
+      "Kepulauan Bangka Belitung": 1.76,
+      "Kalimantan Tengah": 1.69
+    },
+    "gain_tercepat": {
+      "provinsi": "Papua Barat",
+      "gain_poin": 2.45,
+      "ipm_2022": 66.03,
+      "ipm_2025": 68.48
+    },
+    "gain_terlambat": {
+      "provinsi": "Kalimantan Tengah",
+      "gain_poin": 1.69,
+      "ipm_2022": 73.17,
+      "ipm_2025": 74.86
+    },
+    "gain_rata_rata_semua_provinsi": 2.05,
+    "kelompok_10_terbawah_2022": {
+      "provinsi": [
+        "Papua Pegunungan",
+        "Papua Tengah",
+        "Papua Barat",
+        "Papua Selatan",
+        "Nusa Tenggara Timur",
+        "Papua Barat Daya",
+        "Sulawesi Barat",
+        "Kalimantan Barat",
+        "Maluku Utara",
+        "Gorontalo"
+      ],
+      "gain_rata_rata": 2.15
+    },
+    "kelompok_10_teratas_2022": {
+      "provinsi": [
+        "DKI Jakarta",
+        "DI Yogyakarta",
+        "Kepulauan Riau",
+        "Bali",
+        "Kalimantan Timur",
+        "Banten",
+        "Sumatera Barat",
+        "Sulawesi Utara",
+        "Sumatera Utara",
+        "Riau"
+      ],
+      "gain_rata_rata": 1.99
+    },
+    "kelompok_bawah_tumbuh_lebih_cepat": true,
+    "selisih_gain_bawah_kurang_atas": 0.16,
+    "gap_maks_min_2022_poin": 30.08,
+    "gap_maks_min_2025_poin": 30.14,
+    "perubahan_gap_poin": 0.06
+  },
+  "diagnostik_komponen_2025": {
+    "provinsi_10_terendah": [
+      "Papua Pegunungan",
+      "Papua Tengah",
+      "Papua Barat",
+      "Papua Selatan",
+      "Nusa Tenggara Timur",
+      "Papua Barat Daya",
+      "Sulawesi Barat",
+      "Kalimantan Barat",
+      "Maluku Utara",
+      "Gorontalo"
+    ],
+    "rata_rata_10_terendah": {
+      "uhh_tahun": 70.41,
+      "hls_tahun": 12.53,
+      "rls_tahun": 7.83,
+      "pengeluaran_ribu_rp": 9356.1
+    },
+    "rata_rata_nasional_2025_bps": {
+      "uhh_tahun": 74.47,
+      "hls_tahun": 13.3,
+      "rls_tahun": 9.07,
+      "pengeluaran_ribu_rp": 12802
+    },
+    "rata_rata_semua_provinsi_2025": {
+      "uhh_tahun": 73.18,
+      "hls_tahun": 13.26,
+      "rls_tahun": 9.03,
+      "pengeluaran_ribu_rp": 11962.47
+    },
+    "selisih_10_terendah_kurang_nasional": {
+      "uhh_tahun": -4.06,
+      "hls_tahun": -0.77,
+      "rls_tahun": -1.24,
+      "pengeluaran_ribu_rp": -3445.9
+    },
+    "gap_hls_kurang_rls": {
+      "kelompok_10_terendah_tahun": 4.7,
+      "nasional_tahun": 4.23,
+      "selisih_tahun": 0.47,
+      "catatan": "HLS adalah harapan lama sekolah anak usia 7 tahun (aliran), RLS adalah rata-rata lama sekolah penduduk 25 tahun ke atas (stok). Gap yang lebih lebar di kelompok bawah berarti stok pendidikan orang dewasa tertinggal lebih jauh dari harapan generasi anak saat ini."
+    },
+    "rentang_uhh": {
+      "maks": {
+        "provinsi": "DKI Jakarta",
+        "uhh_tahun": 76.27
+      },
+      "min": {
+        "provinsi": "Papua Pegunungan",
+        "uhh_tahun": 67.55
+      },
+      "rentang_tahun": 8.72
+    },
+    "rentang_pengeluaran": {
+      "maks": {
+        "provinsi": "DKI Jakarta",
+        "pengeluaran_ribu_rp": 20676
+      },
+      "min": {
+        "provinsi": "Papua Pegunungan",
+        "pengeluaran_ribu_rp": 5861
+      },
+      "rentang_ribu_rp": 14815,
+      "rasio_maks_min": 3.528
+    }
+  },
+  "korelasi_ipm_kemiskinan": {
+    "pasangan": "IPM 2025 x kemiskinan Mar 2025",
+    "pearson_r": -0.8188,
+    "n_provinsi": 38,
+    "arah": "negatif",
+    "contoh_ipm_tinggi_kemiskinan_rendah": {
+      "berdasarkan_ipm_tertinggi": {
+        "provinsi": "DKI Jakarta",
+        "ipm": 85.05,
+        "persen_miskin": 4.28
+      },
+      "berdasarkan_kemiskinan_terendah": {
+        "provinsi": "Bali",
+        "ipm": 79.37,
+        "persen_miskin": 3.72
+      }
+    },
+    "contoh_ipm_rendah_kemiskinan_tinggi": {
+      "berdasarkan_ipm_terendah": {
+        "provinsi": "Papua Pegunungan",
+        "ipm": 54.91,
+        "persen_miskin": 30.03
+      },
+      "berdasarkan_kemiskinan_tertinggi": {
+        "provinsi": "Papua Pegunungan",
+        "ipm": 54.91,
+        "persen_miskin": 30.03
+      }
+    }
+  }
+}
