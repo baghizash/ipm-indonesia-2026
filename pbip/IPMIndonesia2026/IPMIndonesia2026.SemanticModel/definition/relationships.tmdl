@@ -1,0 +1,24 @@
+relationship ab12d2ea-03f7-58e2-aa83-c39cb59198a9
+	fromColumn: fact_ipm_provinsi.provinsi_id
+	toColumn: dim_provinsi.provinsi_id
+	crossFilteringBehavior: oneDirection
+
+relationship 90dbf1df-179b-5724-acd8-79a793900e57
+	fromColumn: fact_ipm_provinsi.tahun_id
+	toColumn: dim_tahun.tahun_id
+	crossFilteringBehavior: oneDirection
+
+relationship 309cbd1f-421e-5f8a-b645-bcb31605fcdd
+	fromColumn: fact_ipm_nasional.tahun_id
+	toColumn: dim_tahun.tahun_id
+	crossFilteringBehavior: oneDirection
+
+relationship 3840682a-7656-59bf-bc8a-5b8383844f4b
+	fromColumn: fact_komponen_provinsi.provinsi_id
+	toColumn: dim_provinsi.provinsi_id
+	crossFilteringBehavior: oneDirection
+
+relationship 7c43c567-ccef-5640-b3b7-3724fe95b679
+	fromColumn: fact_komponen_provinsi.tahun_id
+	toColumn: dim_tahun.tahun_id
+	crossFilteringBehavior: oneDirection
