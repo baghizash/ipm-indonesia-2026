@@ -1,0 +1,153 @@
+tahun,provinsi,ipm,kategori
+2022,Aceh,74.11,Tinggi
+2023,Aceh,74.70,Tinggi
+2024,Aceh,75.36,Tinggi
+2025,Aceh,76.23,Tinggi
+2022,Sumatera Utara,74.51,Tinggi
+2023,Sumatera Utara,75.13,Tinggi
+2024,Sumatera Utara,75.76,Tinggi
+2025,Sumatera Utara,76.47,Tinggi
+2022,Sumatera Barat,75.16,Tinggi
+2023,Sumatera Barat,75.64,Tinggi
+2024,Sumatera Barat,76.43,Tinggi
+2025,Sumatera Barat,77.27,Tinggi
+2022,Riau,74.45,Tinggi
+2023,Riau,74.95,Tinggi
+2024,Riau,75.67,Tinggi
+2025,Riau,76.31,Tinggi
+2022,Jambi,73.11,Tinggi
+2023,Jambi,73.73,Tinggi
+2024,Jambi,74.36,Tinggi
+2025,Jambi,75.13,Tinggi
+2022,Sumatera Selatan,72.48,Tinggi
+2023,Sumatera Selatan,73.18,Tinggi
+2024,Sumatera Selatan,73.84,Tinggi
+2025,Sumatera Selatan,74.76,Tinggi
+2022,Bengkulu,73.68,Tinggi
+2023,Bengkulu,74.30,Tinggi
+2024,Bengkulu,74.91,Tinggi
+2025,Bengkulu,75.68,Tinggi
+2022,Lampung,71.79,Tinggi
+2023,Lampung,72.48,Tinggi
+2024,Lampung,73.13,Tinggi
+2025,Lampung,73.98,Tinggi
+2022,Kepulauan Bangka Belitung,73.50,Tinggi
+2023,Kepulauan Bangka Belitung,74.09,Tinggi
+2024,Kepulauan Bangka Belitung,74.55,Tinggi
+2025,Kepulauan Bangka Belitung,75.26,Tinggi
+2022,Kepulauan Riau,78.48,Tinggi
+2023,Kepulauan Riau,79.08,Tinggi
+2024,Kepulauan Riau,79.89,Tinggi
+2025,Kepulauan Riau,80.53,Sangat Tinggi
+2022,DKI Jakarta,82.77,Sangat Tinggi
+2023,DKI Jakarta,83.55,Sangat Tinggi
+2024,DKI Jakarta,84.15,Sangat Tinggi
+2025,DKI Jakarta,85.05,Sangat Tinggi
+2022,Jawa Barat,73.63,Tinggi
+2023,Jawa Barat,74.24,Tinggi
+2024,Jawa Barat,74.92,Tinggi
+2025,Jawa Barat,75.90,Tinggi
+2022,Jawa Tengah,72.80,Tinggi
+2023,Jawa Tengah,73.39,Tinggi
+2024,Jawa Tengah,73.87,Tinggi
+2025,Jawa Tengah,74.77,Tinggi
+2022,DI Yogyakarta,80.65,Sangat Tinggi
+2023,DI Yogyakarta,81.09,Sangat Tinggi
+2024,DI Yogyakarta,81.62,Sangat Tinggi
+2025,DI Yogyakarta,82.48,Sangat Tinggi
+2022,Jawa Timur,74.05,Tinggi
+2023,Jawa Timur,74.65,Tinggi
+2024,Jawa Timur,75.35,Tinggi
+2025,Jawa Timur,76.13,Tinggi
+2022,Banten,75.25,Tinggi
+2023,Banten,75.77,Tinggi
+2024,Banten,76.35,Tinggi
+2025,Banten,77.25,Tinggi
+2022,Bali,77.40,Tinggi
+2023,Bali,78.01,Tinggi
+2024,Bali,78.63,Tinggi
+2025,Bali,79.37,Tinggi
+2022,Nusa Tenggara Barat,71.65,Tinggi
+2023,Nusa Tenggara Barat,72.37,Tinggi
+2024,Nusa Tenggara Barat,73.10,Tinggi
+2025,Nusa Tenggara Barat,73.97,Tinggi
+2022,Nusa Tenggara Timur,67.63,Sedang
+2023,Nusa Tenggara Timur,68.40,Sedang
+2024,Nusa Tenggara Timur,69.14,Sedang
+2025,Nusa Tenggara Timur,69.89,Sedang
+2022,Kalimantan Barat,69.71,Sedang
+2023,Kalimantan Barat,70.47,Tinggi
+2024,Kalimantan Barat,71.19,Tinggi
+2025,Kalimantan Barat,72.09,Tinggi
+2022,Kalimantan Tengah,73.17,Tinggi
+2023,Kalimantan Tengah,73.73,Tinggi
+2024,Kalimantan Tengah,74.28,Tinggi
+2025,Kalimantan Tengah,74.86,Tinggi
+2022,Kalimantan Selatan,74.00,Tinggi
+2023,Kalimantan Selatan,74.66,Tinggi
+2024,Kalimantan Selatan,75.19,Tinggi
+2025,Kalimantan Selatan,76.10,Tinggi
+2022,Kalimantan Timur,77.36,Tinggi
+2023,Kalimantan Timur,78.20,Tinggi
+2024,Kalimantan Timur,78.79,Tinggi
+2025,Kalimantan Timur,79.39,Tinggi
+2022,Kalimantan Utara,72.21,Tinggi
+2023,Kalimantan Utara,72.88,Tinggi
+2024,Kalimantan Utara,73.41,Tinggi
+2025,Kalimantan Utara,74.04,Tinggi
+2022,Sulawesi Utara,74.52,Tinggi
+2023,Sulawesi Utara,75.04,Tinggi
+2024,Sulawesi Utara,75.68,Tinggi
+2025,Sulawesi Utara,76.32,Tinggi
+2022,Sulawesi Tengah,71.01,Tinggi
+2023,Sulawesi Tengah,71.66,Tinggi
+2024,Sulawesi Tengah,72.24,Tinggi
+2025,Sulawesi Tengah,72.82,Tinggi
+2022,Sulawesi Selatan,73.96,Tinggi
+2023,Sulawesi Selatan,74.60,Tinggi
+2024,Sulawesi Selatan,75.18,Tinggi
+2025,Sulawesi Selatan,75.92,Tinggi
+2022,Sulawesi Tenggara,72.38,Tinggi
+2023,Sulawesi Tenggara,72.94,Tinggi
+2024,Sulawesi Tenggara,73.62,Tinggi
+2025,Sulawesi Tenggara,74.25,Tinggi
+2022,Gorontalo,70.62,Tinggi
+2023,Gorontalo,71.25,Tinggi
+2024,Gorontalo,72.01,Tinggi
+2025,Gorontalo,72.62,Tinggi
+2022,Sulawesi Barat,69.19,Sedang
+2023,Sulawesi Barat,69.80,Sedang
+2024,Sulawesi Barat,70.46,Tinggi
+2025,Sulawesi Barat,71.16,Tinggi
+2022,Maluku,72.04,Tinggi
+2023,Maluku,72.75,Tinggi
+2024,Maluku,73.40,Tinggi
+2025,Maluku,74.09,Tinggi
+2022,Maluku Utara,70.26,Tinggi
+2023,Maluku Utara,70.98,Tinggi
+2024,Maluku Utara,71.84,Tinggi
+2025,Maluku Utara,72.52,Tinggi
+2022,Papua Barat,66.03,Sedang
+2023,Papua Barat,66.84,Sedang
+2024,Papua Barat,67.69,Sedang
+2025,Papua Barat,68.48,Sedang
+2022,Papua Barat Daya,68.60,Sedang
+2023,Papua Barat Daya,69.07,Sedang
+2024,Papua Barat Daya,69.65,Sedang
+2025,Papua Barat Daya,70.55,Tinggi
+2022,Papua,72.57,Tinggi
+2023,Papua,73.23,Tinggi
+2024,Papua,73.83,Tinggi
+2025,Papua,74.69,Tinggi
+2022,Papua Selatan,67.39,Sedang
+2023,Papua Selatan,68.24,Sedang
+2024,Papua Selatan,68.86,Sedang
+2025,Papua Selatan,69.54,Sedang
+2022,Papua Tengah,58.76,Rendah
+2023,Papua Tengah,59.44,Rendah
+2024,Papua Tengah,60.25,Sedang
+2025,Papua Tengah,60.64,Sedang
+2022,Papua Pegunungan,52.69,Rendah
+2023,Papua Pegunungan,53.45,Rendah
+2024,Papua Pegunungan,54.43,Rendah
+2025,Papua Pegunungan,54.91,Rendah
