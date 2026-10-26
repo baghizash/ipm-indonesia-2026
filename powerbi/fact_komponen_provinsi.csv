@@ -1,0 +1,39 @@
+provinsi_id,provinsi,tahun_id,uhh_tahun,hls_tahun,rls_tahun,pengeluaran_ribu_rp,ipm,kategori,pertumbuhan_persen
+1,Aceh,2025,73.48,14.4,9.95,11191,76.23,Tinggi,1.15
+2,Sumatera Utara,2025,74.19,13.5,10.08,11898,76.47,Tinggi,0.94
+3,Sumatera Barat,2025,74.69,14.31,9.77,12041,77.27,Tinggi,1.1
+4,Riau,2025,74.74,13.44,9.55,12233,76.31,Tinggi,0.85
+5,Jambi,2025,74.39,13.34,8.95,12018,75.13,Tinggi,1.04
+6,Sumatera Selatan,2025,74.58,12.65,8.91,12416,74.76,Tinggi,1.25
+7,Bengkulu,2025,73.59,13.76,9.23,12197,75.68,Tinggi,1.03
+8,Lampung,2025,74.71,12.79,8.61,11683,73.98,Tinggi,1.16
+9,Kepulauan Bangka Belitung,2025,74.46,12.5,8.65,13837,75.26,Tinggi,0.95
+10,Kepulauan Riau,2025,75.46,13.28,10.72,15881,80.53,Sangat Tinggi,0.8
+11,DKI Jakarta,2025,76.27,13.8,11.59,20676,85.05,Sangat Tinggi,1.07
+12,Jawa Barat,2025,75.53,13.02,9.14,12447,75.9,Tinggi,1.31
+13,Jawa Tengah,2025,75.24,13.05,8.15,12746,74.77,Tinggi,1.22
+14,DI Yogyakarta,2025,75.64,15.78,10.2,15855,82.48,Sangat Tinggi,1.05
+15,Jawa Timur,2025,75.36,13.44,8.39,13509,76.13,Tinggi,1.04
+16,Banten,2025,75.33,13.11,9.56,13498,77.25,Tinggi,1.18
+17,Bali,2025,75.46,13.63,9.75,15383,79.37,Tinggi,0.94
+18,Nusa Tenggara Barat,2025,72.6,13.99,8.21,11922,73.97,Tinggi,1.19
+19,Nusa Tenggara Timur,2025,72.16,13.34,8.22,8735,69.89,Sedang,1.08
+20,Kalimantan Barat,2025,74.28,12.69,8.07,10689,72.09,Tinggi,1.26
+21,Kalimantan Tengah,2025,74.01,12.78,8.96,12612,74.86,Tinggi,0.78
+22,Kalimantan Selatan,2025,74.49,13.12,8.81,13757,76.1,Tinggi,1.21
+23,Kalimantan Timur,2025,75.28,14.04,10.1,14254,79.39,Tinggi,0.76
+24,Kalimantan Utara,2025,73.68,13.31,9.44,10568,74.04,Tinggi,0.86
+25,Sulawesi Utara,2025,74.44,12.98,9.91,12450,76.32,Tinggi,0.85
+26,Sulawesi Tengah,2025,71.1,13.35,9.1,10934,72.82,Tinggi,0.8
+27,Sulawesi Selatan,2025,74.15,13.56,9.0,12773,75.92,Tinggi,0.98
+28,Sulawesi Tenggara,2025,72.06,13.72,9.56,10992,74.25,Tinggi,0.86
+29,Gorontalo,2025,71.06,13.18,8.38,11937,72.62,Tinggi,0.85
+30,Sulawesi Barat,2025,71.44,12.9,8.31,10516,71.16,Tinggi,0.99
+31,Maluku,2025,71.02,14.1,10.51,9900,74.09,Tinggi,0.94
+32,Maluku Utara,2025,71.47,13.76,9.5,9613,72.52,Tinggi,0.95
+33,Papua Barat,2025,68.76,13.21,8.07,9115,68.48,Sedang,1.17
+34,Papua Barat Daya,2025,70.31,13.89,8.69,9076,70.55,Tinggi,1.29
+35,Papua,2025,70.77,13.94,10.01,11342,74.69,Tinggi,1.16
+36,Papua Selatan,2025,68.71,12.68,8.64,9983,69.54,Sedang,0.99
+37,Papua Tengah,2025,68.38,9.64,6.13,8036,60.64,Sedang,0.65
+38,Papua Pegunungan,2025,67.55,9.98,4.3,5861,54.91,Rendah,0.88
