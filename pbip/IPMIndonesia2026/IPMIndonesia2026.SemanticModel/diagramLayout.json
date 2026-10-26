@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dim_provinsi",
+          "nodeLineageTag": "15059529-0673-57e4-afcd-acb55ab80f0f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 300,
+            "y": 0
+          },
+          "nodeIndex": "dim_tahun",
+          "nodeLineageTag": "07af42cb-4dc0-534e-ba8b-c023cd5b3e4c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 600,
+            "y": 0
+          },
+          "nodeIndex": "fact_ipm_provinsi",
+          "nodeLineageTag": "8fbaf95a-2b04-5a21-acbc-c33796035606",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 260
+          },
+          "nodeIndex": "fact_ipm_nasional",
+          "nodeLineageTag": "3fee43c5-5e46-5b77-9bbb-57d9874f1be2",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 300,
+            "y": 260
+          },
+          "nodeIndex": "fact_komponen_provinsi",
+          "nodeLineageTag": "ae2400c7-3d43-5691-9bec-913701828f29",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFields": [],
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
