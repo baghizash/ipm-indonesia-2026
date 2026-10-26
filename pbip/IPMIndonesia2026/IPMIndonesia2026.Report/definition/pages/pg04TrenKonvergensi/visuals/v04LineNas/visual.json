@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "v04LineNas",
+  "position": {
+    "x": 640,
+    "y": 76,
+    "z": 3,
+    "height": 280,
+    "width": 620,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_tahun"
+                    }
+                  },
+                  "Property": "tahun"
+                }
+              },
+              "queryRef": "dim_tahun.tahun",
+              "nativeQueryRef": "tahun"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_ipm_nasional"
+                    }
+                  },
+                  "Property": "IPM Nasional"
+                }
+              },
+              "queryRef": "fact_ipm_nasional.IPM Nasional",
+              "nativeQueryRef": "IPM Nasional"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'IPM Nasional per Tahun, 2020 sampai 2025'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
